@@ -1,20 +1,23 @@
 
 //export to main.js
 module.exports = function() {
-	console.log('Pick a letter!');
+	//console.log('Pick a letter!');
+	
+	//To make letter appear as a '_' or a letter
+	function Letter(letters) {
+		this.underScore = letters;
+		for(var i = 0; i< letters.length; i++) {
+			this.underScore[i] = '_ ';
+		}
+	this.underLined = function() {
+		console.log(this.Letter);
+	};	
+	}
+
 };
 
 module.exports();
 
-// var require = require('./require/server').listen(1234);
 
-
-
-// (function run() {
-// 	console.log("Here we go!")
-// }());
-// function Letter(guessLetter) {
-// 	this.guessLetter = guessLetter; 
-// }
-
+//Contains methods that checks letters against words
 
